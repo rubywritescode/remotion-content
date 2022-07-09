@@ -1,6 +1,6 @@
 import {Composition} from 'remotion';
 import {HelloWorld} from './HelloWorld';
-import {Logo} from './HelloWorld/Logo';
+import { Content1 } from './Content1';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -23,14 +23,13 @@ export const RemotionVideo = () => {
 					titleColor: 'black',
 				}}
 			/>
-			{/* Mount any React component to make it show up in the sidebar and work on it individually! */}
 			<Composition
-				id="OnlyLogo"
-				component={Logo}
-				durationInFrames={150}
+				id="Content1"
+				component={Content1}
+				durationInFrames={240}
 				fps={30}
-				width={1920}
-				height={1080}
+				width={1080}
+				height={1920}
 			/>
 		</>
 	);
